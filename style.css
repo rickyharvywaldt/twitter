@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+}
+
+#posts {
+    width: 400px;
+}
+
+i {
+    cursor: pointer;
+}
+
+#posts div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+}
+
+#msg {
+    color: red;
+}
+
+#button {
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px;
+    background-color: #26a7de;
+    color: #fff;
+}
+
+#button:disabled {
+    opacity: .5;
+
+}

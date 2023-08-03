@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter like app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Not Twitter</h1>
+    <div class="container">
+        <div class="left">
+            <form id="form">
+                <label for="tweet"></label>
+                <textarea name="tweet" id="input" cols="30" rows="10" placeholder="What's happening?" onKeyUp="buttonActive()"></textarea>
+                <div id="msg"></div>
+                <button type="submit" id="button" disabled>Tweet</button>
+            </form>
+        </div>
+        <div class="right">
+            <h3>Your tweets</h3>
+            <div id="posts">
+                <div>
+                    <p>Is Twitter still alive?</p>
+                    <span class="options">
+                        <i onClick="editTweet(this)" class="fas fa-edit"></i>
+                        <i onClick="deleteTweet(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+                <div>
+                    <p>I thought it was Monday</p>
+                    <span class="options">
+                        <i onClick="editTweet(this)" class="fas fa-edit"></i>
+                        <i onClick="deleteTweet(this)" class="fas fa-trash-alt"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
